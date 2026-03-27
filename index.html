@@ -26,7 +26,7 @@ header::before{content:'';position:absolute;inset:0;background:radial-gradient(e
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(1.4)}}
 h1.hero-name{font-family:'Syne',sans-serif;font-size:clamp(48px,7vw,82px);font-weight:800;color:#fff;line-height:1;letter-spacing:-2px;margin-bottom:12px}
 h1.hero-name span{background:linear-gradient(135deg,var(--sky),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-tagline{font-size:18px;color:rgba(255,255,255,0.55);font-weight:300;margin-bottom:36px;max-width:480px;line-height:1.6}
+.hero-tagline{font-size:18px;color:rgba(255,255,255,0.55);font-weight:300;margin-bottom:36px;max-width:535px;line-height:1.6}
 .hero-stats{display:flex;gap:40px;flex-wrap:wrap}
 .stat{display:flex;flex-direction:column}
 .stat-num{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;color:#fff;line-height:1}
@@ -38,8 +38,8 @@ h1.hero-name span{background:linear-gradient(135deg,var(--sky),var(--cyan));-web
 @keyframes spin{to{transform:rotate(360deg)}}
 .avatar-inner{width:180px;height:180px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--navy2));display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:#fff;border:3px solid rgba(255,255,255,0.1);position:relative;z-index:1}
 .contact-pills{display:flex;flex-direction:column;gap:8px;width:100%}
-.cpill{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px 14px;display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.7);font-size:12.5px}
-.cpill-icon{width:24px;height:24px;background:rgba(33,150,243,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}
+.cpill{background:#098bf2;border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 15px;display:flex;align-items:center;gap:15px;color:rgba(255,255,255,0.7);font-size:14px}
+.cpill-icon{width:24px;height:24px;background:rgba(33,150,243,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
 
 /* NAV */
 nav{background:rgba(11,31,58,0.97);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.06);position:sticky;top:0;z-index:100}
@@ -53,7 +53,7 @@ nav ul li a:hover::after{left:18px;right:18px}
 .nav-cta::after{display:none !important}
 
 /* MAIN */
-main{max-width:1160px;margin:0 auto;padding:60px 48px 80px;display:grid;grid-template-columns:1fr 340px;gap:40px;align-items:start}
+main{max-width:1200px;margin:0 auto;padding:35px 35px 15px;display:grid;grid-template-columns:1fr 340px;gap:40px;align-items:start}
 .sec-label{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--sky);margin-bottom:10px}
 .sec-label::before{content:'';width:20px;height:2px;background:linear-gradient(90deg,var(--sky),var(--cyan));border-radius:2px}
 h2.sec-title{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:var(--navy);margin-bottom:28px;line-height:1.1}
@@ -86,8 +86,8 @@ section{margin-bottom:60px}
 .s-card-title::after{content:'';flex:1;height:1px;background:var(--border)}
 .aws-items{display:flex;flex-direction:column;gap:12px}
 .aws-row{display:flex;gap:12px;align-items:flex-start}
-.aws-tag{background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--cyan2);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:0.5px;padding:5px 10px;border-radius:8px;white-space:nowrap;min-width:80px;text-align:center;flex-shrink:0}
-.aws-desc{font-size:12.5px;color:var(--muted);line-height:1.4}
+.aws-tag{background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--cyan2);font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.5px;padding:5px 10px;border-radius:8px;white-space:nowrap;min-width:80px;text-align:center;flex-shrink:0}
+.aws-desc{font-size:13px;color:var(--muted);line-height:1.4}
 .skill-group{margin-bottom:16px}
 .skill-group:last-child{margin-bottom:0}
 .sg-label{font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
@@ -217,6 +217,7 @@ footer::before{content:'';position:absolute;inset:0;background:radial-gradient(e
         <div class="exp-card">
           <div class="exp-top"><span class="exp-role">Project Manager / Technical Consultant</span><span class="exp-badge">Aug 2022 – Present</span></div>
           <p class="exp-company">Cognizant Technology Solutions</p>
+          <p class="exp-client">Client: LEDVANCE GmbH — Global Web Platform &amp; Cloud Infrastructure</p>
           <ul class="bullet-list">
             <li>Led strategic project planning for LEDVANCE GmbH global digital platform across 25+ countries with cross-functional team management.</li>
             <li>Orchestrated Kubernetes workloads on EKS with HPA/VPA autoscalers; managed canary and blue-green deployments for zero-downtime releases.</li>
@@ -227,6 +228,7 @@ footer::before{content:'';position:absolute;inset:0;background:radial-gradient(e
         <div class="exp-card">
           <div class="exp-top"><span class="exp-role">Technical Consultant</span><span class="exp-badge">June 2019 – July 2022</span></div>
           <p class="exp-company">Cognizant Technology Solutions</p>
+          <p class="exp-client">Client: LEDVANCE GmbH — Global Web Platform &amp; Cloud Infrastructure</p>
           <ul class="bullet-list">
             <li>Provided AWS cloud consulting for infrastructure design, deployment automation, and DevOps toolchain adoption.</li>
             <li>Built Action Card components for Microsoft Dynamics CRM using TypeScript, React.js, and Node.js.</li>
@@ -236,6 +238,7 @@ footer::before{content:'';position:absolute;inset:0;background:radial-gradient(e
         <div class="exp-card">
           <div class="exp-top"><span class="exp-role">Associate / Programmer Analyst</span><span class="exp-badge">Dec 2014 – June 2019</span></div>
           <p class="exp-company">Cognizant Technology Solutions</p>
+          <p class="exp-client">Client: LEDVANCE GmbH — Global Web Platform &amp; Cloud Infrastructure</p>
           <ul class="bullet-list">
             <li>Developed and maintained web applications for CoreLogic (Data &amp; Analytics) using Angular, HTML5, CSS3, and Bootstrap.</li>
             <li>Contributed to CI/CD pipeline setup and early cloud migration initiatives.</li>
@@ -244,6 +247,13 @@ footer::before{content:'';position:absolute;inset:0;background:radial-gradient(e
         <div class="exp-card">
           <div class="exp-top"><span class="exp-role">Software Engineer / Web Developer</span><span class="exp-badge">Aug 2010 – July 2014</span></div>
           <p class="exp-company">Element Informatics (India) Pvt. Ltd. · Way2mint Services</p>
+          <p
+            class="exp-client">
+            Client: LEDVANCE
+            GmbH — Global Web
+            Platform &amp;
+            Cloud
+            Infrastructure</p>
           <ul class="bullet-list">
             <li>Built Windows apps and static web applications using ASP.NET MVC, JavaScript, jQuery, HTML5, CSS3, and Facebook Developer APIs.</li>
           </ul>
@@ -291,7 +301,7 @@ footer::before{content:'';position:absolute;inset:0;background:radial-gradient(e
 
     <div class="s-card" id="certs">
       <p class="s-card-title">Certifications</p>
-      <div class="cert-item"><div class="cert-icon">AWS</div><div><p class="cert-name">AWS Certified Solutions Architect – Associate</p><span class="cert-status status-progress">In Progress · 2025</span></div></div>
+      <div class="cert-item"><div class="cert-icon">AWS</div><div><p class="cert-name">AWS Certified Solutions Architect – Associate</p><span class="cert-status status-progress">In Progress · 2026</span></div></div>
       <div class="cert-item"><div class="cert-icon">AI</div><div><p class="cert-name">Generative AI Fundamentals – 101 Basic</p><span class="cert-status status-done">Completed</span></div></div>
       <div class="cert-item"><div class="cert-icon">VC</div><div><p class="cert-name">Video Coding Certification</p><span class="cert-status status-done">Completed</span></div></div>
     </div>
